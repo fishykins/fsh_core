@@ -1,0 +1,19 @@
+﻿  stdafx.cpp
+d:\arma\fsh_core\extensions\objcounter\objcounter\fsh_object.h(20): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+d:\arma\fsh_core\extensions\objcounter\objcounter\fsh_object.h(21): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+  dllmain.cpp
+d:\arma\fsh_core\extensions\objcounter\objcounter\fsh_object.h(20): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+d:\arma\fsh_core\extensions\objcounter\objcounter\fsh_object.h(21): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+  objCounter.cpp
+d:\arma\fsh_core\extensions\objcounter\objcounter\objcounter.cpp(104): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+d:\arma\fsh_core\extensions\objcounter\objcounter\objcounter.cpp(115): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+d:\arma\fsh_core\extensions\objcounter\objcounter\objcounter.cpp(128): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+d:\arma\fsh_core\extensions\objcounter\objcounter\objcounter.cpp(160): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  fsh_object.cpp
+d:\arma\fsh_core\extensions\objcounter\objcounter\fsh_object.cpp(38): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+d:\arma\fsh_core\extensions\objcounter\objcounter\fsh_object.cpp(39): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  Generating Code...
+d:\arma\fsh_core\extensions\objcounter\objcounter\objcounter.cpp(136): warning C4715: 'pull': not all control paths return a value
+     Creating library D:\Arma\fsh_core\extensions\objCounter\x64\Debug\objCounter_x64.lib and object D:\Arma\fsh_core\extensions\objCounter\x64\Debug\objCounter_x64.exp
+  objCounter.vcxproj -> D:\Arma\fsh_core\extensions\objCounter\x64\Debug\objCounter_x64.dll
+  objCounter.vcxproj -> D:\Arma\fsh_core\extensions\objCounter\x64\Debug\objCounter_x64.pdb (Partial PDB)

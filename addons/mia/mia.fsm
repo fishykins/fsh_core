@@ -1,0 +1,440 @@
+/*%FSM<COMPILE "C:\Program Files (x86)\Steam\steamapps\common\Arma 3 Tools\FSMEditor\scriptedFSM.cfg, mia">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"init",0,250,-261.403107,-546.610352,-171.403107,-496.610535,0.000000,"init"};
+item1[] = {"postInit",2,250,-13.444000,-544.736450,76.556015,-494.736603,0.000000,"postInit"};
+item2[] = {"true",8,218,-149.029602,-545.424683,-59.029602,-495.424835,0.000000,"true"};
+item3[] = {"pause",4,218,297.142853,-57.546814,387.142822,-7.546814,0.000000,"pause"};
+item4[] = {"begin_loop",2,250,147.937256,-56.925507,237.937256,-6.925507,0.000000,"begin" \n "loop"};
+item5[] = {"true",8,218,155.867401,-543.359863,245.867401,-493.360046,0.000000,"true"};
+item6[] = {"init_1",2,250,708.600098,-60.988464,798.600098,-10.988464,0.000000,"init"};
+item7[] = {"has_areas",4,218,839.804565,-61.731628,929.804565,-11.731628,1.000000,"has areas"};
+item8[] = {"end_loop",2,4346,716.543213,-541.497986,806.543274,-491.498016,0.000000,"end" \n "loop"};
+item9[] = {"area_profile",2,250,977.053589,-59.317688,1067.053589,-9.317688,0.000000,"area" \n "profile"};
+item10[] = {"get_data",2,250,424.660492,-54.329956,514.660522,-4.329956,0.000000,"get data"};
+item11[] = {"has_groups",4,218,572.401855,-61.985657,662.402039,-11.985657,1.000000,"has groups"};
+item12[] = {"default",8,218,908.147400,-542.625549,998.147400,-492.625427,0.000000,"default"};
+item13[] = {"not__profiled_ar",4,218,975.454590,27.822205,1065.454712,77.822205,1.000000,"not " \n "profiled" \n "area"};
+item14[] = {"profile_area",2,250,1097.386963,29.036865,1187.386963,79.036835,0.000000,"profile area"};
+item15[] = {"default",8,218,1095.611572,-58.698608,1185.611572,-8.698608,0.000000,"default"};
+item16[] = {"targeting",2,250,1256.950317,-61.746277,1346.950317,-11.746277,0.000000,"targeting"};
+item17[] = {"has_targets",4,218,1372.414551,-64.915222,1462.414673,-14.915222,1.000000,"has" \n "targets"};
+item18[] = {"default",8,218,1255.250977,-131.520813,1345.250977,-81.520813,0.000000,"default"};
+item19[] = {"combat",2,250,1372.240601,-201.460052,1462.240601,-151.460052,0.000000,"combat"};
+item20[] = {"safe",2,250,1255.750244,-202.207672,1345.750244,-152.207672,0.000000,"safe"};
+item21[] = {"default",8,218,1312.611572,-334.004761,1402.611572,-284.004791,0.000000,"default"};
+item22[] = {"allocate_tasks",2,250,1311.531860,-413.899536,1401.531860,-363.899506,0.000000,"allocate" \n "tasks"};
+item23[] = {"has_active_tasks",4,218,1309.624756,-491.244232,1399.624756,-441.244232,1.000000,"has" \n "active" \n "tasks"};
+item24[] = {"monitor__tasks",2,250,1309.229248,-568.841675,1399.229370,-518.841675,0.000000,"monitor " \n "tasks"};
+link0[] = {0,2};
+link1[] = {1,5};
+link2[] = {2,1};
+link3[] = {3,10};
+link4[] = {4,3};
+link5[] = {5,4};
+link6[] = {6,7};
+link7[] = {6,12};
+link8[] = {7,9};
+link9[] = {8,5};
+link10[] = {9,13};
+link11[] = {9,15};
+link12[] = {10,11};
+link13[] = {10,12};
+link14[] = {11,6};
+link15[] = {12,8};
+link16[] = {13,14};
+link17[] = {14,15};
+link18[] = {15,16};
+link19[] = {16,17};
+link20[] = {16,18};
+link21[] = {17,19};
+link22[] = {18,20};
+link23[] = {19,21};
+link24[] = {20,21};
+link25[] = {21,22};
+link26[] = {22,12};
+link27[] = {22,23};
+link28[] = {23,24};
+link29[] = {24,12};
+globals[] = {0.000000,0,0,0,0,640,480,1,38,6316128,1,-326.627991,1426.136230,390.251038,-714.590576,1404,885,1};
+window[] = {2,-1,-1,-1,-1,810,50,1490,50,3,1422};
+*//*%FSM</HEAD>*/
+class FSM
+{
+        fsmName = "mia";
+        class States
+        {
+                /*%FSM<STATE "init">*/
+                class init
+                {
+                        name = "init";
+                        itemno = 0;
+                        init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "true">*/
+                                class true
+                                {
+                                        itemno = 2;
+                                        priority = 0.000000;
+                                        to="postInit";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "postInit">*/
+                class postInit
+                {
+                        name = "postInit";
+                        itemno = 1;
+                        init = /*%FSM<STATEINIT""">*/"_mia = _this select 0;" \n
+                         "_name = _mia getVariable [""name"", ""noID""];" \n
+                         "_initTime = diag_tickTime;" \n
+                         "_sleepTime = 5;" \n
+                         "_loop = 1;" \n
+                         "_systemMessage = ""init"";"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "true">*/
+                                class true
+                                {
+                                        itemno = 5;
+                                        priority = 0.000000;
+                                        to="begin_loop";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "begin_loop">*/
+                class begin_loop
+                {
+                        name = "begin_loop";
+                        itemno = 4;
+                        init = /*%FSM<STATEINIT""">*/"_time = diag_tickTime;" \n
+                         "_loop = _loop + 1;" \n
+                         "_systemMessage = ""Begin Loop"";" \n
+                         "" \n
+                         "//systemChat format [""%1: loop %2"", _name, _loop];"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "pause">*/
+                                class pause
+                                {
+                                        itemno = 3;
+                                        priority = 0.000000;
+                                        to="get_data";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"(diag_tickTime - _time) > _sleepTime"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "init_1">*/
+                class init_1
+                {
+                        name = "init_1";
+                        itemno = 6;
+                        init = /*%FSM<STATEINIT""">*/"_systemMessage = ""No area found"";"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "has_areas">*/
+                                class has_areas
+                                {
+                                        itemno = 7;
+                                        priority = 1.000000;
+                                        to="area_profile";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"!(_areas isEqualto [])"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "default">*/
+                                class default
+                                {
+                                        itemno = 12;
+                                        priority = 0.000000;
+                                        to="end_loop";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "end_loop">*/
+                class end_loop
+                {
+                        name = "end_loop";
+                        itemno = 8;
+                        init = /*%FSM<STATEINIT""">*/"//systemChat _systemMessage;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "true">*/
+                                class true
+                                {
+                                        itemno = 5;
+                                        priority = 0.000000;
+                                        to="begin_loop";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "area_profile">*/
+                class area_profile
+                {
+                        name = "area_profile";
+                        itemno = 9;
+                        init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "not__profiled_ar">*/
+                                class not__profiled_ar
+                                {
+                                        itemno = 13;
+                                        priority = 1.000000;
+                                        to="profile_area";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"false"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "default">*/
+                                class default
+                                {
+                                        itemno = 15;
+                                        priority = 0.000000;
+                                        to="targeting";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "get_data">*/
+                class get_data
+                {
+                        name = "get_data";
+                        itemno = 10;
+                        init = /*%FSM<STATEINIT""">*/"_groups = _mia getVariable [""groups"", []];" \n
+                         "_areas = _mia getVariable [""areas"", []];" \n
+                         "" \n
+                         "_systemMessage = ""No groups found"";"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "has_groups">*/
+                                class has_groups
+                                {
+                                        itemno = 11;
+                                        priority = 1.000000;
+                                        to="init_1";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"!(_groups isEqualto [])"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "default">*/
+                                class default
+                                {
+                                        itemno = 12;
+                                        priority = 0.000000;
+                                        to="end_loop";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "profile_area">*/
+                class profile_area
+                {
+                        name = "profile_area";
+                        itemno = 14;
+                        init = /*%FSM<STATEINIT""">*/"systemChat ""Profiling area"";"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "default">*/
+                                class default
+                                {
+                                        itemno = 15;
+                                        priority = 0.000000;
+                                        to="targeting";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "targeting">*/
+                class targeting
+                {
+                        name = "targeting";
+                        itemno = 16;
+                        init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "has_targets">*/
+                                class has_targets
+                                {
+                                        itemno = 17;
+                                        priority = 1.000000;
+                                        to="combat";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"false"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "default">*/
+                                class default
+                                {
+                                        itemno = 18;
+                                        priority = 0.000000;
+                                        to="safe";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "combat">*/
+                class combat
+                {
+                        name = "combat";
+                        itemno = 19;
+                        init = /*%FSM<STATEINIT""">*/"_systemMessage = ""Combat"";"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "default">*/
+                                class default
+                                {
+                                        itemno = 21;
+                                        priority = 0.000000;
+                                        to="allocate_tasks";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "safe">*/
+                class safe
+                {
+                        name = "safe";
+                        itemno = 20;
+                        init = /*%FSM<STATEINIT""">*/"_systemMessage = ""Safe"";" \n
+                         "call fsh_core_mia_fnc_node_safe;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "default">*/
+                                class default
+                                {
+                                        itemno = 21;
+                                        priority = 0.000000;
+                                        to="allocate_tasks";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "allocate_tasks">*/
+                class allocate_tasks
+                {
+                        name = "allocate_tasks";
+                        itemno = 22;
+                        init = /*%FSM<STATEINIT""">*/"call fsh_core_mia_fnc_node_allocate;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "has_active_tasks">*/
+                                class has_active_tasks
+                                {
+                                        itemno = 23;
+                                        priority = 1.000000;
+                                        to="monitor__tasks";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"false"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "default">*/
+                                class default
+                                {
+                                        itemno = 12;
+                                        priority = 0.000000;
+                                        to="end_loop";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "monitor__tasks">*/
+                class monitor__tasks
+                {
+                        name = "monitor__tasks";
+                        itemno = 24;
+                        init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "default">*/
+                                class default
+                                {
+                                        itemno = 12;
+                                        priority = 0.000000;
+                                        to="end_loop";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+        };
+        initState="init";
+        finalStates[] =
+        {
+        };
+};
+/*%FSM</COMPILE>*/

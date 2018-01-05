@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project name="FSH_CORE">
+    <Package name="modules">
+        <Key ID="STR_fsh_modules_vehicles">
+            <English>Vehicles</English>
+            <Japanese>adgsdsfh</Japanese>
+        </Key>
+    </Package>
+</Project>

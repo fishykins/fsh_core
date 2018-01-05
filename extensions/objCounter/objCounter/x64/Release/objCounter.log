@@ -1,0 +1,19 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(387,5): warning MSB8028: The intermediate directory (x64\Release\) contains files shared from another project (objCounter.vcxproj, objCounter_x64.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  objCounter.cpp
+objCounter.cpp(63): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+objCounter.cpp(154): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+objCounter.cpp(165): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+objCounter.cpp(175): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+objCounter.cpp(183): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+objCounter.cpp(185): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+objCounter.cpp(197): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+objCounter.cpp(199): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+objCounter.cpp(206): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+objCounter.cpp(220): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+     Creating library D:\Arma\fsh_core\extensions\objCounter\x64\Release\distribution_x64.lib and object D:\Arma\fsh_core\extensions\objCounter\x64\Release\distribution_x64.exp
+  Generating code
+  7 of 207 functions ( 3.4%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    23 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  objCounter.vcxproj -> D:\Arma\fsh_core\extensions\objCounter\x64\Release\distribution_x64.dll

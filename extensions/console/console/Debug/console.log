@@ -1,0 +1,17 @@
+﻿  console.cpp
+d:\mysql\include\cppconn\sqlstring.h(39): warning C4251: 'sql::SQLString::realStr': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'sql::SQLString'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.10.25017\include\xstring(3997): note: see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+d:\mysql\include\cppconn\exception.h(61): warning C4251: 'sql::SQLException::sql_state': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'sql::SQLException'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.10.25017\include\xstring(3997): note: see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+d:\mysql\include\cppconn\exception.h(145): warning C4251: 'sql::SQLUnsupportedOptionException::option': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of struct 'sql::SQLUnsupportedOptionException'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.10.25017\include\xstring(3997): note: see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+d:\mysql\include\mysql_connection.h(175): warning C4251: 'sql::mysql::MySQL_Connection::proxy': class 'boost::shared_ptr<sql::mysql::NativeAPI::NativeConnectionWrapper>' needs to have dll-interface to be used by clients of class 'sql::mysql::MySQL_Connection'
+  d:\mysql\include\mysql_connection.h(175): note: see declaration of 'boost::shared_ptr<sql::mysql::NativeAPI::NativeConnectionWrapper>'
+d:\mysql\include\mysql_connection.h(179): warning C4251: 'sql::mysql::MySQL_Connection::service': class 'boost::scoped_ptr<sql::mysql::MySQL_Statement>' needs to have dll-interface to be used by clients of class 'sql::mysql::MySQL_Connection'
+  d:\mysql\include\mysql_connection.h(179): note: see declaration of 'boost::scoped_ptr<sql::mysql::MySQL_Statement>'
+d:\mysql\include\mysql_connection.h(181): warning C4251: 'sql::mysql::MySQL_Connection::intern': class 'boost::scoped_ptr<sql::mysql::MySQL_ConnectionData>' needs to have dll-interface to be used by clients of class 'sql::mysql::MySQL_Connection'
+  d:\mysql\include\mysql_connection.h(181): note: see declaration of 'boost::scoped_ptr<sql::mysql::MySQL_ConnectionData>'
+console.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const & __thiscall sql::SQLException::getSQLState(void)const " (__imp_?getSQLState@SQLException@sql@@QBEABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ) referenced in function __catch$_main$0
+console.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: int __thiscall sql::SQLException::getErrorCode(void)const " (__imp_?getErrorCode@SQLException@sql@@QBEHXZ) referenced in function __catch$_main$0
+D:\MySQL\lib\opt\mysqlcppconn.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'X86'
+D:\Arma\fsh_core\extensions\console\Debug\console.exe : fatal error LNK1120: 2 unresolved externals

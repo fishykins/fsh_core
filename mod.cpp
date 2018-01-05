@@ -1,0 +1,14 @@
+name = "Fsh Core";
+picture = "logo_cba_ca.paa";
+actionName = "Website";
+action = "https://github.com/CBATeam/CBA_A3/wiki";
+description = "Bugtracker: https://github.com/CBATeam/CBA_A3/issues<br />Documentation: https://cbateam.github.io/CBA_A3/docs/files/overview-txt.html";
+logo = "logo_cba_ca.paa";
+logoOver = "logo_cba_ca.paa";
+tooltip = "Fsh Core";
+tooltipOwned = "Fully Scheduled help";
+overview = "This mod is all about fish. Lots of little, tiny fish with nothing better to do than write code. ";
+author = "Fishy";
+overviewPicture = "logo_cba_ca.paa";
+overviewText = "Fsh Core overview Text";
+overviewFootnote = "<br /><br /><t color='#999999'>This content is under GPLv2 License.<br />Press <t /><t color='#19d3ff'>Left Shift + P<t /><t color='#999999'> to open the store page for more information.<t />";

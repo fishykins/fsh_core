@@ -1,0 +1,868 @@
+/*%FSM<COMPILE "C:\Program Files (x86)\Steam\steamapps\common\Arma 3 Tools\FSMEditor\scriptedFSM.cfg, xMove">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"init",0,250,-426.370728,-172.872406,-337.652771,-118.598900,0.000000,"init"};
+item1[] = {"wait",2,250,-35.785828,-161.357941,54.214188,-111.357941,0.000000,"wait"};
+item2[] = {"true",8,218,-285.343750,-169.984985,-195.343750,-119.984993,0.000000,"true"};
+item3[] = {"infantry__ready",4,218,-282.769501,-284.242462,-192.769501,-234.242462,4.000000,"infantry " \n "ready"};
+item4[] = {"forceStop",2,250,-426.182831,-369.385345,-336.182800,-319.385345,0.000000,"forceStop"};
+item5[] = {"new_movement_com",4,218,165.557892,-219.182922,282.122528,-142.618317,5.000000,"new" \n "movement" \n "command"};
+item6[] = {"reset",2,250,512.278320,-125.862267,602.278320,-75.862274,0.000000,"reset"};
+item7[] = {"isLeader",4,218,634.648132,-185.494354,724.648132,-135.494354,2.000000,"isLeader"};
+item8[] = {"subordinate",8,218,605.167419,-253.953400,695.167419,-203.953400,0.000000,"subordinate"};
+item9[] = {"un_domove",2,250,740.956848,-265.197449,830.956848,-215.197418,0.000000,"un-domove"};
+item10[] = {"un_domove_1",2,250,742.262207,-190.906631,832.262207,-140.906662,0.000000,"un-domove"};
+item11[] = {"exit",1,250,1326.564697,-81.660858,1416.565063,-31.660873,0.000000,"exit"};
+item12[] = {"true",8,218,1068.875977,-84.167664,1158.875977,-34.167664,0.000000,"true"};
+item13[] = {"is_vehicle",4,218,607.086853,-62.640717,697.086731,-12.640717,6.000000,"is vehicle"};
+item14[] = {"typeof",2,4346,606.527893,203.984894,696.527954,253.984894,0.000000,"typeof"};
+item15[] = {"isStatic",4,218,417.956085,202.486359,507.956116,252.486359,1.000000,"isStatic"};
+item16[] = {"getOut",2,250,253.572327,161.435181,343.572327,211.435181,0.000000,"getOut"};
+item17[] = {"true",8,218,310.518463,-129.332336,400.518463,-79.332336,0.000000,"true"};
+item18[] = {"sit",4,218,-766.168945,-450.962738,-676.168945,-400.962738,1.000000,"sit"};
+item19[] = {"setup__sitting",2,250,-764.094727,-549.486816,-674.094727,-499.486786,0.000000,"setup " \n "sitting"};
+item20[] = {"sat_down",4,218,524.967346,-32.523529,614.967346,17.476471,8.000000,"sat" \n "down"};
+item21[] = {"acex_running",4,218,-757.348511,-621.818359,-667.348572,-571.818115,1.000000,"acex" \n "running"};
+item22[] = {"acex",2,250,-759.870239,-694.928223,-669.870117,-644.928101,0.000000,"acex"};
+item23[] = {"stance",8,218,-427.095825,-477.275085,-337.095825,-427.275452,0.000000,"stance"};
+item24[] = {"near_chair",4,218,-753.869568,-763.327454,-663.869446,-713.327454,1.000000,"near" \n "chair"};
+item25[] = {"stand_up",2,250,425.267456,135.876740,515.267395,185.876770,0.000000,"stand up"};
+item26[] = {"wait_1",2,250,-33.778603,-227.588562,56.221436,-177.588562,0.000000,"wait"};
+item27[] = {"set_stance",2,250,-430.470490,-574.261108,-340.470459,-524.260986,0.000000,"set stance"};
+item28[] = {"true",8,218,-147.924988,-340.554840,-57.924988,-290.554840,0.000000,"true"};
+item29[] = {"sit_on_chair",2,250,-750.924438,-824.955750,-660.924377,-774.955750,0.000000,"sit on" \n "chair"};
+item30[] = {"animate",4,218,-559.091919,-369.602478,-469.091888,-319.602478,10.000000,"animate"};
+item31[] = {"animation",2,250,-768.073059,-365.780579,-678.072998,-315.780579,0.000000,"animation"};
+item32[] = {"animation__loop",2,250,-73.314697,-402.859589,16.685303,-352.859558,0.000000,"animation " \n "loop"};
+item33[] = {"wait",4,218,-32.733948,-338.772949,57.266022,-288.772949,0.000000,"wait"};
+item34[] = {"animating",4,218,432.795319,-63.225891,522.795349,-13.225891,10.000000,"animating"};
+item35[] = {"stop_animation",2,250,429.172455,9.173798,519.172607,59.173798,0.000000,"stop" \n "animation"};
+item36[] = {"",7,210,-302.008911,-705.336060,-294.008911,-697.336060,0.000000,""};
+item37[] = {"execute__animati",2,250,-898.541992,-822.765320,-808.541931,-772.765320,0.000000,"execute " \n "animation"};
+item38[] = {"true",8,218,-905.576660,-556.915161,-815.576660,-506.915161,0.000000,"true"};
+item39[] = {"",7,210,-855.779541,-863.429260,-847.779541,-855.429260,0.000000,""};
+item40[] = {"",7,210,-106.177727,-852.480652,-98.177734,-844.480652,0.000000,""};
+item41[] = {"stop_ai",2,250,-603.955750,-293.983154,-513.955688,-243.983154,0.000000,"stop" \n "ai"};
+item42[] = {"pause",4,218,-653.245972,-368.500671,-563.245850,-318.500732,0.000000,"pause"};
+item43[] = {"enable__ai",2,250,310.491547,-204.971680,400.491577,-154.971725,0.000000,"enable " \n "ai"};
+item44[] = {"new__doMove",4,218,648.789673,-120.883270,738.789673,-70.883270,4.000000,"new " \n "doMove"};
+item45[] = {"do_nothing",2,250,860.869629,-83.923920,950.869629,-33.923920,0.000000,"do" \n "nothing"};
+link0[] = {0,2};
+link1[] = {1,3};
+link2[] = {1,5};
+link3[] = {2,1};
+link4[] = {3,4};
+link5[] = {4,23};
+link6[] = {4,30};
+link7[] = {5,43};
+link8[] = {6,7};
+link9[] = {6,8};
+link10[] = {6,13};
+link11[] = {6,20};
+link12[] = {6,34};
+link13[] = {6,44};
+link14[] = {7,9};
+link15[] = {8,9};
+link16[] = {9,12};
+link17[] = {12,11};
+link18[] = {13,14};
+link19[] = {14,12};
+link20[] = {14,15};
+link21[] = {15,16};
+link22[] = {16,17};
+link23[] = {17,6};
+link24[] = {18,19};
+link25[] = {19,21};
+link26[] = {19,38};
+link27[] = {20,25};
+link28[] = {21,22};
+link29[] = {22,24};
+link30[] = {22,38};
+link31[] = {23,27};
+link32[] = {24,29};
+link33[] = {25,17};
+link34[] = {26,5};
+link35[] = {26,33};
+link36[] = {27,28};
+link37[] = {28,26};
+link38[] = {29,36};
+link39[] = {30,41};
+link40[] = {31,18};
+link41[] = {31,38};
+link42[] = {32,28};
+link43[] = {33,32};
+link44[] = {34,35};
+link45[] = {35,17};
+link46[] = {36,28};
+link47[] = {37,39};
+link48[] = {38,37};
+link49[] = {39,40};
+link50[] = {40,28};
+link51[] = {41,42};
+link52[] = {42,31};
+link53[] = {43,17};
+link54[] = {44,45};
+link55[] = {45,12};
+globals[] = {0.000000,0,0,0,0,640,480,1,73,6316128,1,-401.834412,2045.355591,319.708618,-1326.008179,1316,885,1};
+window[] = {2,-1,-1,-1,-1,780,47,1487,20,3,1334};
+*//*%FSM</HEAD>*/
+class FSM
+{
+        fsmName = "xMove";
+        class States
+        {
+                /*%FSM<STATE "init">*/
+                class init
+                {
+                        name = "init";
+                        itemno = 0;
+                        init = /*%FSM<STATEINIT""">*/"_time = diag_tickTime;" \n
+                         "_unit = _this select 0;" \n
+                         "_position = _this select 1;" \n
+                         "_stance = _this select 2;" \n
+                         "_direction = _this select 3;" \n
+                         "_id = _this select 4;" \n
+                         "_group = group _unit;" \n
+                         "_leader = leader _group;" \n
+                         "_waypoint = currentWaypoint _group;" \n
+                         "_vehicle = assignedVehicle _unit;" \n
+                         "_sitting = false;" \n
+                         "_animating = false;" \n
+                         "" \n
+                         "fsh_doMove_count = fsh_doMove_count + 1;" \n
+                         "" \n
+                         "[_unit,""Moving"",""_name has started doMove fsm loop""] call fsh_fnc_aiLog;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "true">*/
+                                class true
+                                {
+                                        itemno = 2;
+                                        priority = 0.000000;
+                                        to="wait";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "wait">*/
+                class wait
+                {
+                        name = "wait";
+                        itemno = 1;
+                        init = /*%FSM<STATEINIT""">*/"_time = diag_tickTime;" \n
+                         "{_unit enableAI _x} forEach [""ANIM"", ""AUTOTARGET"", ""FSM"", ""MOVE"", ""TARGET""];" \n
+                         "_unit setVariable [""fsh_core_ai_canMove"", false,false];" \n
+                         ""/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "new_movement_com">*/
+                                class new_movement_com
+                                {
+                                        itemno = 5;
+                                        priority = 5.000000;
+                                        to="enable__ai";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"[_unit] call fsh_fnc_isMoving ||" \n
+                                         "!(_unit getVariable [""fsh_core_ai_doMoveID"", -1] isEqualTo _id) ||" \n
+                                         "_unit getVariable [""fsh_core_ai_canMove"", false]"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "infantry__ready">*/
+                                class infantry__ready
+                                {
+                                        itemno = 3;
+                                        priority = 4.000000;
+                                        to="forceStop";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"unitReady _unit && _vehicle isEqualTo objNull"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "forceStop">*/
+                class forceStop
+                {
+                        name = "forceStop";
+                        itemno = 4;
+                        init = /*%FSM<STATEINIT""">*/"//systemChat format[""%1 has stopped"", _unit];" \n
+                         "_position = getPos _unit;" \n
+                         "doStop _unit;" \n
+                         "//Set direction if needed" \n
+                         "if (_direction >=0) then {" \n
+                         "	_position =  _unit getRelPos [100, _direction];" \n
+                         "	_unit doWatch _position;" \n
+                         "};" \n
+                         "" \n
+                         "[_unit,""Arrived"",""_name has reached his destination""] call fsh_fnc_aiLog;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "animate">*/
+                                class animate
+                                {
+                                        itemno = 30;
+                                        priority = 10.000000;
+                                        to="stop_ai";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"(toLower _stance) in [""sit"",""workout"",""talk""]"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "stance">*/
+                                class stance
+                                {
+                                        itemno = 23;
+                                        priority = 0.000000;
+                                        to="set_stance";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "reset">*/
+                class reset
+                {
+                        name = "reset";
+                        itemno = 6;
+                        init = /*%FSM<STATEINIT""">*/"_vehicle = assignedVehicle _unit;" \n
+                         ""/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "animating">*/
+                                class animating
+                                {
+                                        itemno = 34;
+                                        priority = 10.000000;
+                                        to="stop_animation";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"_animating"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "sat_down">*/
+                                class sat_down
+                                {
+                                        itemno = 20;
+                                        priority = 8.000000;
+                                        to="stand_up";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"_sitting"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "is_vehicle">*/
+                                class is_vehicle
+                                {
+                                        itemno = 13;
+                                        priority = 6.000000;
+                                        to="typeof";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"!(_vehicle isEqualTo objNull)"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "new__doMove">*/
+                                class new__doMove
+                                {
+                                        itemno = 44;
+                                        priority = 4.000000;
+                                        to="do_nothing";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"!(_unit getVariable [""fsh_doMove"", -1] isEqualTo _id)"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "isLeader">*/
+                                class isLeader
+                                {
+                                        itemno = 7;
+                                        priority = 2.000000;
+                                        to="un_domove";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"_leader isEqualTo _unit"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "subordinate">*/
+                                class subordinate
+                                {
+                                        itemno = 8;
+                                        priority = 0.000000;
+                                        to="un_domove";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "un_domove">*/
+                class un_domove
+                {
+                        name = "un_domove";
+                        itemno = 9;
+                        init = /*%FSM<STATEINIT""">*/"_leader = leader (group _unit);" \n
+                         "_unit doFollow _leader;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "true">*/
+                                class true
+                                {
+                                        itemno = 12;
+                                        priority = 0.000000;
+                                        to="exit";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "un_domove_1">*/
+                class un_domove_1
+                {
+                        name = "un_domove_1";
+                        itemno = 10;
+                        init = /*%FSM<STATEINIT""">*/"[_unit] joinSilent grpnull;" \n
+                         "[_unit] joinSilent _group;" \n
+                         "_group selectLeader _unit;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "exit">*/
+                class exit
+                {
+                        name = "exit";
+                        itemno = 11;
+                        init = /*%FSM<STATEINIT""">*/"//systemChat format[""%1 is moving"", _unit];" \n
+                         "" \n
+                         "fsh_doMove_count = fsh_doMove_count - 1;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "typeof">*/
+                class typeof
+                {
+                        name = "typeof";
+                        itemno = 14;
+                        init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "isStatic">*/
+                                class isStatic
+                                {
+                                        itemno = 15;
+                                        priority = 1.000000;
+                                        to="getOut";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"_vehicle isKindOf ""StaticWeapon"""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "true">*/
+                                class true
+                                {
+                                        itemno = 12;
+                                        priority = 0.000000;
+                                        to="exit";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "getOut">*/
+                class getOut
+                {
+                        name = "getOut";
+                        itemno = 16;
+                        init = /*%FSM<STATEINIT""">*/"systemChat format[""%1 is getting out"", _unit];" \n
+                         "unassignVehicle _unit;" \n
+                         "[_unit] orderGetIn false; " \n
+                         "_unit doFollow _leader;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "true">*/
+                                class true
+                                {
+                                        itemno = 17;
+                                        priority = 0.000000;
+                                        to="reset";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "setup__sitting">*/
+                class setup__sitting
+                {
+                        name = "setup__sitting";
+                        itemno = 19;
+                        init = /*%FSM<STATEINIT""">*/"_chair = objNull;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "acex_running">*/
+                                class acex_running
+                                {
+                                        itemno = 21;
+                                        priority = 1.000000;
+                                        to="acex";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"!(isNil ""acex_sitting_fnc_sit"")"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "true">*/
+                                class true
+                                {
+                                        itemno = 38;
+                                        priority = 0.000000;
+                                        to="execute__animati";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "acex">*/
+                class acex
+                {
+                        name = "acex";
+                        itemno = 22;
+                        init = /*%FSM<STATEINIT""">*/"_allObjects = nearestObjects [_position, [""ThingX""], 5]; " \n
+                         "//Find a chair that can be sat on." \n
+                         "for ""_i"" from 0 to (count _allObjects) -1 do {" \n
+                         "	_item = 	_allObjects select _i;" \n
+                         "	private _isChair = getNumber (configFile >> ""CfgVehicles"" >> typeOf _item >> ""acex_sitting_canSit"");" \n
+                         "	if (_isChair isEqualTO 1) then {" \n
+                         "		if ([_item, _unit] call acex_sitting_fnc_canSit) then {" \n
+                         "			_chair = _item;" \n
+                         "			_i = count _allObjects;" \n
+                         "		};" \n
+                         "	};" \n
+                         "};" \n
+                         ""/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "near_chair">*/
+                                class near_chair
+                                {
+                                        itemno = 24;
+                                        priority = 1.000000;
+                                        to="sit_on_chair";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"!(_chair isEqualTo ObjNull)"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "true">*/
+                                class true
+                                {
+                                        itemno = 38;
+                                        priority = 0.000000;
+                                        to="execute__animati";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "stand_up">*/
+                class stand_up
+                {
+                        name = "stand_up";
+                        itemno = 25;
+                        init = /*%FSM<STATEINIT""">*/"[_unit] call acex_sitting_fnc_stand;" \n
+                         "_sitting = false;" \n
+                         "_unit enableAI ""MOVE"";"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "true">*/
+                                class true
+                                {
+                                        itemno = 17;
+                                        priority = 0.000000;
+                                        to="reset";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "wait_1">*/
+                class wait_1
+                {
+                        name = "wait_1";
+                        itemno = 26;
+                        init = /*%FSM<STATEINIT""">*/"_time = diag_tickTime;" \n
+                         ""/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "new_movement_com">*/
+                                class new_movement_com
+                                {
+                                        itemno = 5;
+                                        priority = 5.000000;
+                                        to="enable__ai";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"[_unit] call fsh_fnc_isMoving ||" \n
+                                         "!(_unit getVariable [""fsh_core_ai_doMoveID"", -1] isEqualTo _id) ||" \n
+                                         "_unit getVariable [""fsh_core_ai_canMove"", false]"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "wait">*/
+                                class wait
+                                {
+                                        itemno = 33;
+                                        priority = 0.000000;
+                                        to="animation__loop";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"_animating && (diag_tickTime - _time) > 1"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "set_stance">*/
+                class set_stance
+                {
+                        name = "set_stance";
+                        itemno = 27;
+                        init = /*%FSM<STATEINIT""">*/"_unit setUnitPos _stance;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "true">*/
+                                class true
+                                {
+                                        itemno = 28;
+                                        priority = 0.000000;
+                                        to="wait_1";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "sit_on_chair">*/
+                class sit_on_chair
+                {
+                        name = "sit_on_chair";
+                        itemno = 29;
+                        init = /*%FSM<STATEINIT""">*/"_time = diag_tickTime;" \n
+                         "_sitting = true;" \n
+                         "[_chair,_unit] call acex_sitting_fnc_sit;" \n
+                         "" \n
+                         "[_unit,""Sat Down"",""%name is sitting on a chair""] call fsh_fnc_aiLog;" \n
+                         "" \n
+                         "(_unit getVariable ""acex_sitting_isSitting"") params [""_seat"", ""_actionID""];" \n
+                         "_unit removeAction _actionID;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "true">*/
+                                class true
+                                {
+                                        itemno = 28;
+                                        priority = 0.000000;
+                                        to="wait_1";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "animation">*/
+                class animation
+                {
+                        name = "animation";
+                        itemno = 31;
+                        init = /*%FSM<STATEINIT""">*/"_animationType = toLower _stance;" \n
+                         "_stance = ""AUTO"";"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "sit">*/
+                                class sit
+                                {
+                                        itemno = 18;
+                                        priority = 1.000000;
+                                        to="setup__sitting";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"_animationType isEqualTo ""sit"""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "true">*/
+                                class true
+                                {
+                                        itemno = 38;
+                                        priority = 0.000000;
+                                        to="execute__animati";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "animation__loop">*/
+                class animation__loop
+                {
+                        name = "animation__loop";
+                        itemno = 32;
+                        init = /*%FSM<STATEINIT""">*/"if (_static) then {" \n
+                         "    if (_static && random (5) > 4) then {" \n
+                         "        _unit setVariable [""fsh_animDone"", true, false];" \n
+                         "    };" \n
+                         "};" \n
+                         "" \n
+                         "_animNew = """";" \n
+                         "" \n
+                         "if(_unit getVariable [""fsh_animDone"", false]) then {   " \n
+                         "    if (!(_animStatic isEqualTo []) && !_static) then {" \n
+                         "        _animNew =  (selectRandom _animStatic);" \n
+                         "        _static = true;" \n
+                         "    } else {" \n
+                         "        if (!(_animLoop isEqualTo [])) then {" \n
+                         "            _animNew = (selectRandom _animLoop);" \n
+                         "            _static = false;" \n
+                         "        };" \n
+                         "    };" \n
+                         "    _unit switchMove _animNew;" \n
+                         "    _unit setVariable [""fsh_animDone"", false, false];" \n
+                         "    //systemChat format[""%1 is doing %2"", _unit, _animNew]; " \n
+                         "};"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "true">*/
+                                class true
+                                {
+                                        itemno = 28;
+                                        priority = 0.000000;
+                                        to="wait_1";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "stop_animation">*/
+                class stop_animation
+                {
+                        name = "stop_animation";
+                        itemno = 35;
+                        init = /*%FSM<STATEINIT""">*/"_animating = false;" \n
+                         "" \n
+                         "if (!(_animEnd isEqualTo [])) then {" \n
+                         "    _unit playActionNow  (selectRandom _animEnd);" \n
+                         "    _unit setVariable [""fsh_animDone"", false, false];" \n
+                         "    _unit addEventHandler [""AnimDone"", {" \n
+                         "        private _unit = (_this select 0);" \n
+                         "        {_unit enableAI _x} forEach [""ANIM"", ""AUTOTARGET"", ""FSM"", ""MOVE"", ""TARGET""] ;" \n
+                         "        _unit removeEventHandler [""AnimDone"", _thisEventHandler];  " \n
+                         "    }];" \n
+                         "} else {" \n
+                         "    _unit setVariable [""fsh_animDone"", true, false];" \n
+                         "    {_unit enableAI _x} forEach [""ANIM"", ""AUTOTARGET"", ""FSM"", ""MOVE"", ""TARGET""] ;" \n
+                         "};" \n
+                         "" \n
+                         "_unit removeEventHandler [""AnimDone"", _ehAnim];" \n
+                         "" \n
+                         "_unit setVariable [""fsh_animating"", false, false];"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "true">*/
+                                class true
+                                {
+                                        itemno = 17;
+                                        priority = 0.000000;
+                                        to="reset";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "execute__animati">*/
+                class execute__animati
+                {
+                        name = "execute__animati";
+                        itemno = 37;
+                        init = /*%FSM<STATEINIT""">*/"_animations = [_animationType] call fsh_fnc_getAnimations;" \n
+                         "_animStart = _animations select 0;" \n
+                         "_animStatic = _animations select 1;" \n
+                         "_animLoop = _animations select 2;" \n
+                         "_animEnd = _animations select 3;" \n
+                         "" \n
+                         "_animating = true;" \n
+                         "_static = false;" \n
+                         "_unit setVariable [""fsh_animating"", true, false];" \n
+                         "" \n
+                         "if (!(_animStart isEqualTo [])) then {" \n
+                         "    _unit playActionNow  (selectRandom _animStart);" \n
+                         "    _unit setVariable [""fsh_animDone"", false, false];" \n
+                         "} else {" \n
+                         "    _unit setVariable [""fsh_animDone"", true, false];" \n
+                         "};" \n
+                         "    " \n
+                         "_ehAnim = _unit addEventHandler [""AnimDone""," \n
+                         "    {" \n
+                         "        (_this select 0) setVariable [""fsh_animDone"", true, false];" \n
+                         "    }" \n
+                         "];" \n
+                         "" \n
+                         ""/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "true">*/
+                                class true
+                                {
+                                        itemno = 28;
+                                        priority = 0.000000;
+                                        to="wait_1";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "stop_ai">*/
+                class stop_ai
+                {
+                        name = "stop_ai";
+                        itemno = 41;
+                        init = /*%FSM<STATEINIT""">*/"_time = diag_tickTime;" \n
+                         "_unit setVelocity [0,0,0];" \n
+                         "{_unit disableAI _x} forEach [""ANIM"", ""AUTOTARGET"", ""FSM"", ""MOVE"", ""TARGET""];"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "pause">*/
+                                class pause
+                                {
+                                        itemno = 42;
+                                        priority = 0.000000;
+                                        to="animation";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"(diag_tickTime - _time) > 1;"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "enable__ai">*/
+                class enable__ai
+                {
+                        name = "enable__ai";
+                        itemno = 43;
+                        init = /*%FSM<STATEINIT""">*/"{_unit enableAI _x} forEach [""ANIM"", ""AUTOTARGET"", ""FSM"", ""MOVE"", ""TARGET""];" \n
+                         "" \n
+                         "_unit setUnitPos ""AUTO"";" \n
+                         "_unit doWatch objNull;" \n
+                         "" \n
+                         "[_unit,""Regrouping"",""_name is regrouping""] call fsh_fnc_aiLog;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "true">*/
+                                class true
+                                {
+                                        itemno = 17;
+                                        priority = 0.000000;
+                                        to="reset";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "do_nothing">*/
+                class do_nothing
+                {
+                        name = "do_nothing";
+                        itemno = 45;
+                        init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "true">*/
+                                class true
+                                {
+                                        itemno = 12;
+                                        priority = 0.000000;
+                                        to="exit";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+        };
+        initState="init";
+        finalStates[] =
+        {
+                "exit",
+        };
+};
+/*%FSM</COMPILE>*/
