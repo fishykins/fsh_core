@@ -1,6 +1,0 @@
-﻿  stdafx.cpp
-  dllmain.cpp
-  test.cpp
-     Creating library D:\Arma\fsh_core\extensions\test\Debug\test.lib and object D:\Arma\fsh_core\extensions\test\Debug\test.exp
-  test.vcxproj -> D:\Arma\fsh_core\extensions\test\Debug\test.dll
-  test.vcxproj -> D:\Arma\fsh_core\extensions\test\Debug\test.pdb (Partial PDB)
